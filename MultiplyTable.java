@@ -3,8 +3,7 @@ class ForNesting
 	public static void main(String[] args)
 	{
 		int a;
-		int p, q;
-		int s = 9, t;
+		int p, q, t;
 		System.out.print("\t");
 		for (a = 9; a >=1; a--)
 		{
@@ -16,12 +15,11 @@ class ForNesting
 			System.out.print(p + "\t");
 			for(q = 9; q >= p; q--)
 			{
-				t = p * s;
+				t = p * q;
 				System.out.print(t + "\t");
-				s--;
 			}
 			System.out.println();
-			s = 9;
+			q = 9;
 		}
 	}
 }
